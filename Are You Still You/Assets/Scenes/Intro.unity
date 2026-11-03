@@ -154,7 +154,7 @@ MonoBehaviour:
   screenCenter: {fileID: 770949326}
   startingSize: 20
   firstZoomSize: 2
-  finalZoomSize: 0.3
+  finalZoomSize: 0.2
   firstZoomDuration: 12
   secondZoomDuration: 5
   computerRenderer: {fileID: 14629674}

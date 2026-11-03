@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 99f7b68cb86b39140adede0729ead8bc
+guid: 1775e9ba53d9a5e4ebdef5918fa6cd84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5378008253350800241
-    second: Windows_Progress_Fill_0
+      213: 1942781521682832354
+    second: Window_Header_Resizable_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Windows_Progress_Fill_0
+      name: Window_Header_Resizable_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8418ebccf97d55b0800000000000000
-      internalID: -5378008253350800241
+      spriteID: 2eb191c208526fa10800000000000000
+      internalID: 1942781521682832354
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Windows_Progress_Fill_0: -5378008253350800241
+      Window_Header_Resizable_0: 1942781521682832354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
