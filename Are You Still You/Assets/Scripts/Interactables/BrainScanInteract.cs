@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
@@ -22,6 +23,9 @@ public class BrainScanInteract : MonoBehaviour
     [SerializeField] private Sprite[] loadingFrames;
     [SerializeField] private float frameDuration = 0.1f;
     [SerializeField] private float finishDelay = 0.5f;
+
+    [Header("Chapter 3")]
+    [SerializeField] private ArtificialBodyInteract artificialBodyInteract;
 
     private bool isProcessing = false;
     private bool scanFinished = false;
@@ -116,6 +120,16 @@ public class BrainScanInteract : MonoBehaviour
         // Hide the folder name
         if (folderName != null)
             folderName.enabled = false;
+
+        // Show the Artificial Body folder
+        if (artificialBodyInteract != null)
+        {
+            artificialBodyInteract.ShowFolder();
+        }
+        else
+        {
+            Debug.LogError("Artificial Body Interact is not assigned!");
+        }
 
         scanFinished = true;
         isProcessing = false;
