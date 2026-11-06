@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ComputerScreen.unity
     guid: 1feac7b8f51550247bc3f270450cf000
+  - enabled: 1
+    path: Assets/Scenes/ComputerTerminal.unity
+    guid: f96106087d864a14b99aa16f89a1e175
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 2b64d5e7992c9c341a3467b9c734b25c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0

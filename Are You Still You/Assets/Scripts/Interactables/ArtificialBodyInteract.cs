@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class ArtificialBodyInteract : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class ArtificialBodyInteract : MonoBehaviour
 
     [Header("Body Modification")]
     [SerializeField] private Collider2D loadBrainScanCollider;
+
+    [Header("Chapter 4")]
+    [SerializeField] private string chapter4SceneName;
 
     private bool folderOpened = false;
     private bool bodySelected = false;
@@ -128,8 +132,17 @@ public class ArtificialBodyInteract : MonoBehaviour
 
                 uploadSelected = true;
 
-                // Chapter 4 scene transition will be added later.
-                Debug.Log("READY FOR CHAPTER 4 - BRAIN UPLOAD!");
+                // Load Chapter 4 using the scene name entered in the Inspector
+                if (!string.IsNullOrWhiteSpace(chapter4SceneName))
+                {
+                    SceneManager.LoadScene(chapter4SceneName);
+                }
+                else
+                {
+                    Debug.LogError("Chapter 4 Scene Name has not been entered!");
+                    uploadSelected = false;
+                }
+
                 return;
             }
         }
